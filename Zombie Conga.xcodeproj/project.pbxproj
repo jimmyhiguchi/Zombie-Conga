@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8F9C031FC8F47C000B4A1E /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9BFE1FC8F47C000B4A1E /* win.wav */; };
+		CE8F9C041FC8F47C000B4A1E /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9BFF1FC8F47C000B4A1E /* lose.wav */; };
+		CE8F9C051FC8F47C000B4A1E /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9C001FC8F47C000B4A1E /* hitCat.wav */; };
+		CE8F9C061FC8F47C000B4A1E /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9C011FC8F47C000B4A1E /* hitCatLady.wav */; };
+		CE8F9C071FC8F47C000B4A1E /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9C021FC8F47C000B4A1E /* backgroundMusic.mp3 */; };
+		CE8F9C091FC950BE000B4A1E /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F9C081FC950BE000B4A1E /* GameOverScene.swift */; };
+		CE8F9C0B1FCCDC6E000B4A1E /* GLIMSTIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9C0A1FCCDC6E000B4A1E /* GLIMSTIC.TTF */; };
 		CEBB6E0C1FBE368500218AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB6E0B1FBE368500218AD9 /* AppDelegate.swift */; };
-		CEBB6E0E1FBE368500218AD9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEBB6E0D1FBE368500218AD9 /* GameScene.sks */; };
-		CEBB6E101FBE368500218AD9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEBB6E0F1FBE368500218AD9 /* Actions.sks */; };
 		CEBB6E121FBE368500218AD9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB6E111FBE368500218AD9 /* GameScene.swift */; };
 		CEBB6E141FBE368500218AD9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB6E131FBE368500218AD9 /* GameViewController.swift */; };
 		CEBB6E171FBE368500218AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB6E151FBE368500218AD9 /* Main.storyboard */; };
 		CEBB6E191FBE368500218AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBB6E181FBE368500218AD9 /* Assets.xcassets */; };
 		CEBB6E1C1FBE368500218AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB6E1A1FBE368500218AD9 /* LaunchScreen.storyboard */; };
+		CEBB6E241FC09FF900218AD9 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB6E231FC09FF900218AD9 /* MyUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE8F9BFE1FC8F47C000B4A1E /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		CE8F9BFF1FC8F47C000B4A1E /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		CE8F9C001FC8F47C000B4A1E /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
+		CE8F9C011FC8F47C000B4A1E /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
+		CE8F9C021FC8F47C000B4A1E /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		CE8F9C081FC950BE000B4A1E /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		CE8F9C0A1FCCDC6E000B4A1E /* GLIMSTIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GLIMSTIC.TTF; sourceTree = "<group>"; };
 		CEBB6E081FBE368500218AD9 /* Zombie Conga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zombie Conga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB6E0B1FBE368500218AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEBB6E0D1FBE368500218AD9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		CEBB6E0F1FBE368500218AD9 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		CEBB6E111FBE368500218AD9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CEBB6E131FBE368500218AD9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CEBB6E161FBE368500218AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBB6E181FBE368500218AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBB6E1B1FBE368500218AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBB6E1D1FBE368500218AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBB6E231FC09FF900218AD9 /* MyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8F9BFD1FC8F47C000B4A1E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F9BFE1FC8F47C000B4A1E /* win.wav */,
+				CE8F9BFF1FC8F47C000B4A1E /* lose.wav */,
+				CE8F9C001FC8F47C000B4A1E /* hitCat.wav */,
+				CE8F9C011FC8F47C000B4A1E /* hitCatLady.wav */,
+				CE8F9C021FC8F47C000B4A1E /* backgroundMusic.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		CEBB6DFF1FBE368500218AD9 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				CEBB6E0B1FBE368500218AD9 /* AppDelegate.swift */,
-				CEBB6E0D1FBE368500218AD9 /* GameScene.sks */,
-				CEBB6E0F1FBE368500218AD9 /* Actions.sks */,
 				CEBB6E111FBE368500218AD9 /* GameScene.swift */,
+				CEBB6E231FC09FF900218AD9 /* MyUtils.swift */,
 				CEBB6E131FBE368500218AD9 /* GameViewController.swift */,
+				CE8F9C081FC950BE000B4A1E /* GameOverScene.swift */,
+				CE8F9C0A1FCCDC6E000B4A1E /* GLIMSTIC.TTF */,
 				CEBB6E151FBE368500218AD9 /* Main.storyboard */,
+				CE8F9BFD1FC8F47C000B4A1E /* Sounds */,
 				CEBB6E181FBE368500218AD9 /* Assets.xcassets */,
 				CEBB6E1A1FBE368500218AD9 /* LaunchScreen.storyboard */,
 				CEBB6E1D1FBE368500218AD9 /* Info.plist */,
@@ -132,11 +158,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8F9C0B1FCCDC6E000B4A1E /* GLIMSTIC.TTF in Resources */,
+				CE8F9C041FC8F47C000B4A1E /* lose.wav in Resources */,
 				CEBB6E171FBE368500218AD9 /* Main.storyboard in Resources */,
-				CEBB6E0E1FBE368500218AD9 /* GameScene.sks in Resources */,
+				CE8F9C071FC8F47C000B4A1E /* backgroundMusic.mp3 in Resources */,
+				CE8F9C031FC8F47C000B4A1E /* win.wav in Resources */,
+				CE8F9C051FC8F47C000B4A1E /* hitCat.wav in Resources */,
 				CEBB6E191FBE368500218AD9 /* Assets.xcassets in Resources */,
+				CE8F9C061FC8F47C000B4A1E /* hitCatLady.wav in Resources */,
 				CEBB6E1C1FBE368500218AD9 /* LaunchScreen.storyboard in Resources */,
-				CEBB6E101FBE368500218AD9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8F9C091FC950BE000B4A1E /* GameOverScene.swift in Sources */,
 				CEBB6E121FBE368500218AD9 /* GameScene.swift in Sources */,
 				CEBB6E141FBE368500218AD9 /* GameViewController.swift in Sources */,
 				CEBB6E0C1FBE368500218AD9 /* AppDelegate.swift in Sources */,
+				CEBB6E241FC09FF900218AD9 /* MyUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

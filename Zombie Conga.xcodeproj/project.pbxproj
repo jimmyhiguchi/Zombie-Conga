@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2F10031FCE243F00B9F3AA /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F10021FCE243F00B9F3AA /* MainMenuScene.swift */; };
 		CE8F9C031FC8F47C000B4A1E /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9BFE1FC8F47C000B4A1E /* win.wav */; };
 		CE8F9C041FC8F47C000B4A1E /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9BFF1FC8F47C000B4A1E /* lose.wav */; };
 		CE8F9C051FC8F47C000B4A1E /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8F9C001FC8F47C000B4A1E /* hitCat.wav */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2F10021FCE243F00B9F3AA /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		CE8F9BFE1FC8F47C000B4A1E /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		CE8F9BFF1FC8F47C000B4A1E /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		CE8F9C001FC8F47C000B4A1E /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		CEBB6E0A1FBE368500218AD9 /* Zombie Conga */ = {
 			isa = PBXGroup;
 			children = (
+				CE2F10021FCE243F00B9F3AA /* MainMenuScene.swift */,
 				CEBB6E0B1FBE368500218AD9 /* AppDelegate.swift */,
 				CEBB6E111FBE368500218AD9 /* GameScene.swift */,
 				CEBB6E231FC09FF900218AD9 /* MyUtils.swift */,
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2F10031FCE243F00B9F3AA /* MainMenuScene.swift in Sources */,
 				CE8F9C091FC950BE000B4A1E /* GameOverScene.swift in Sources */,
 				CEBB6E121FBE368500218AD9 /* GameScene.swift in Sources */,
 				CEBB6E141FBE368500218AD9 /* GameViewController.swift in Sources */,

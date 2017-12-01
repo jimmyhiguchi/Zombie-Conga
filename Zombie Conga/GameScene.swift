@@ -9,9 +9,6 @@
 import SpriteKit
 import GameplayKit
 
-class MainMenuScene: SKScene {
-    
-}
 
 class GameScene: SKScene {
     
@@ -35,6 +32,10 @@ class GameScene: SKScene {
     
     var lives = 5
     var gameOver = false
+    
+    // scene labels
+    let livesLabel = SKLabelNode(fontNamed: "Glimstick")
+    let catLabel = SKLabelNode(fontNamed: "Glimstick")
     
     override init(size: CGSize) {
         let maxAspectRatio: CGFloat = 16.0/9.0
@@ -83,6 +84,29 @@ class GameScene: SKScene {
         
         run(SKAction.repeatForever(SKAction.sequence([SKAction.run(spawnEnemy), SKAction.wait(forDuration: 2.9)])))
         run(SKAction.repeatForever(SKAction.sequence([SKAction.run(spawnCat), SKAction.wait(forDuration: 1.0)])))
+    
+        // lives label
+        livesLabel.text = "Lives: \(lives)"
+        livesLabel.fontColor = SKColor.black
+        livesLabel.fontSize = 100
+        livesLabel.zPosition = 100
+        livesLabel.horizontalAlignmentMode = .left
+        livesLabel.verticalAlignmentMode = .bottom
+        livesLabel.position = CGPoint(x: 20, y: size.height/6)
+        
+        addChild(livesLabel)
+        
+        // lives label
+        catLabel.text = "Cat: 0"
+        catLabel.fontColor = SKColor.black
+        catLabel.fontSize = 100
+        catLabel.zPosition = 100
+        catLabel.horizontalAlignmentMode = .right
+        catLabel.verticalAlignmentMode = .bottom
+        catLabel.position = CGPoint(x: size.width - 20, y: size.height/6)
+        
+        addChild(catLabel)
+        
     }
     
     func checkCollision() {
@@ -150,8 +174,11 @@ class GameScene: SKScene {
     func moveTrain() {
         var trainCount = 0
         var targetPosition = zombie.position
+        
         enumerateChildNodes(withName: "train") { node, stop in
             trainCount += 1
+            self.catLabel.text = "Cat: \(trainCount)"
+            
             if !node.hasActions() {
                 let actionDuration = 0.3
                 let offset = targetPosition - node.position
@@ -190,6 +217,8 @@ class GameScene: SKScene {
                                     SKAction.removeFromParent()]))
             
             loseCount += 1
+            self.catLabel.text = "Cat: \(loseCount)"
+            
             if loseCount >= 2 {
                 stop.pointee = true
             }
@@ -274,6 +303,7 @@ class GameScene: SKScene {
         
     }
     
+
   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }

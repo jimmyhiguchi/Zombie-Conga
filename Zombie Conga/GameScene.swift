@@ -177,7 +177,7 @@ class GameScene: SKScene {
         
         enumerateChildNodes(withName: "train") { node, stop in
             trainCount += 1
-            self.catLabel.text = "Cat: \(trainCount)"
+            
             
             if !node.hasActions() {
                 let actionDuration = 0.3
@@ -190,6 +190,9 @@ class GameScene: SKScene {
             }
             targetPosition = node.position
         }
+        
+        self.catLabel.text = "Cat: \(trainCount)"
+        
         if trainCount >= 5 && !gameOver {
             gameOver = true
             print("You win!")
@@ -217,8 +220,7 @@ class GameScene: SKScene {
                                     SKAction.removeFromParent()]))
             
             loseCount += 1
-            self.catLabel.text = "Cat: \(loseCount)"
-            
+           
             if loseCount >= 2 {
                 stop.pointee = true
             }
